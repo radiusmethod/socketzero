@@ -1,0 +1,29 @@
+{{- if and .Values.istio .Values.istio.enabled }}
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: socketzero
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: {{ include "socketzero.name" . }}
+    helm.sh/chart: {{ include "socketzero.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    app.kubernetes.io/part-of: socketzero
+    app.kubernetes.io/component: socketzero
+spec:
+  gateways:
+  {{- range .Values.istio.socketzero.gateways }}
+  - {{ . }}
+  {{- end }}
+  hosts:
+  {{- range .Values.istio.socketzero.hosts }}
+  - {{ tpl . $}}
+  {{- end }}
+  http:
+    - route:
+        - destination:
+            port:
+              number: {{ .Values.service.port | default "80" }}
+            host: socketzero.{{ .Release.Namespace }}.svc.cluster.local
+  {{- end }}

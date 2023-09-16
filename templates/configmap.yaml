@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  INTERNAL_TARGET: "socketzero-receiver-redis-headless.default.svc.cluster.local:6379"
+  COOKIE_NAME: "__Host-socketzero-authservice-session-id-cookie"

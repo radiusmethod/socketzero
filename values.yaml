@@ -2,6 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+domain: "bigbang.dev"
+
 replicaCount: 1
 
 image:
@@ -14,7 +16,7 @@ imagePullSecrets:
   - name: ecr
 
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "socketzero"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -37,6 +39,19 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
+
+istio:
+  enabled: true
+  socketzero:
+    gateways:
+      - "istio-system/public"
+    hosts:
+      - socketzero.{{ .Values.domain }}
+  # Default kiali peer authentication
+  mtls:
+    # STRICT = Allow only mutual TLS traffic
+    # PERMISSIVE = Allow both plain text and mutual TLS traffic
+    mode: STRICT
 
 service:
   type: ClusterIP
