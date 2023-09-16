@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
 data:
-  INTERNAL_TARGET: "socketzero-receiver-redis-master.socketzero.svc.cluster.local:6379"
-  COOKIE_NAME: "__Host-socketzero-authservice-session-id-cookie"
+  INTERNAL_TARGET: "{{ .Values.internalTarget }}"
+  COOKIE_NAME: "{{ .Values.cookieName }}"
