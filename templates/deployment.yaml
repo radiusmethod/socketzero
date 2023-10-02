@@ -56,7 +56,9 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: config-volume
-              mountPath: /opt/socketzero-receiver/config.json
+              mountPath: /opt/config.json
+              subPath: config.json
+
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
