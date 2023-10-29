@@ -29,6 +29,12 @@ data:
           "targetPort": 2222,
           "targetHost": "ssh.ssh.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
+        },
+        {
+          "hostname": "mariadb.apps.radiusmethod.io",
+          "targetPort": 3306,
+          "targetHost": "mariadb.mariadb.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie"
         }
       ]
     }
