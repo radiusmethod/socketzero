@@ -23,6 +23,12 @@ data:
           "targetPort": 3389,
           "targetHost": "rdp.rdp.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
+        },
+        {
+          "hostname": "ssh.apps.radiusmethod.io",
+          "targetPort": 2222,
+          "targetHost": "ssh.ssh.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie"
         }
       ]
     }
