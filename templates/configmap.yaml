@@ -35,6 +35,12 @@ data:
           "targetPort": 3306,
           "targetHost": "mariadb.mariadb.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
+        },
+        {
+          "hostname": "minecraft.apps.radiusmethod.io",
+          "targetPort": 25565,
+          "targetHost": "minecraft-minecraft.minecraft.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie"
         }
       ]
     }
