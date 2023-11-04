@@ -8,38 +8,51 @@ data:
       "tunnels" : [
         {
           "hostname": "example.org",
+          "listenPort": 8080,
           "targetPort": 80,
           "targetHost": "93.184.216.34",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         },
         {
           "hostname": "redis.apps.radiusmethod.io",
+          "listenPort": 6379,
           "targetPort": 6379,
           "targetHost": "socketzero-redis-master.socketzero.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         },
         {
           "hostname": "rdp.apps.radiusmethod.io",
+          "listenPort": 3389,
           "targetPort": 3389,
           "targetHost": "rdp.rdp.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         },
         {
           "hostname": "ssh.apps.radiusmethod.io",
+          "listenPort": 12222,
           "targetPort": 2222,
           "targetHost": "ssh.ssh.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         },
         {
           "hostname": "mariadb.apps.radiusmethod.io",
+          "listenPort": 13306,
           "targetPort": 3306,
           "targetHost": "mariadb.mariadb.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         },
         {
           "hostname": "minecraft.apps.radiusmethod.io",
+          "listenPort": 25565,
           "targetPort": 25565,
           "targetHost": "minecraft-minecraft.minecraft.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie"
+        },
+        {
+          "hostname": "source-controller.apps.radiusmethod.io",
+          "listenPort": 8081,
+          "targetPort": 80,
+          "targetHost": "source-controller.flux-system.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
         }
       ]
