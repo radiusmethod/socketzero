@@ -36,7 +36,7 @@ data:
         },
         {
           "hostname": "mariadb.apps.radiusmethod.io",
-          "listenPort": 13306,
+          "listenPort": 3306,
           "targetPort": 3306,
           "targetHost": "mariadb.mariadb.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie"
