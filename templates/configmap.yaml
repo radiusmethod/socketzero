@@ -84,7 +84,7 @@ data:
             {
           "hostname": "landmine.apps.radiusmethod.io",
           "listenPort": 443,
-          "targetPort": 25565,
+          "targetPort": 29999,
           "targetHost": "landmine.landmine.svc.cluster.local",
           "cookie": "__Host-socketzero-authservice-session-id-cookie",
           "friendlyName": "Landmine",
