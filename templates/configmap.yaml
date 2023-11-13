@@ -81,7 +81,7 @@ data:
             "Open Minecraft, Select Multiplayer, and add Server minecraft.apps.radiusmethod.io"
           ]
         },
-            {
+        {
           "hostname": "landmine.apps.radiusmethod.io",
           "listenPort": 80,
           "targetPort": 29999,
@@ -94,6 +94,21 @@ data:
             "Host: landmine.apps.radiusmethod.io",
             "",
             "https://landmine.apps.radiusmethod.io"
+          ]
+        },
+        {
+          "hostname": "starwars.apps.radiusmethod.io",
+          "listenPort": 22,
+          "targetPort": 22,
+          "targetHost": "starwars.starwars.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie",
+          "friendlyName": "Starwars",
+          "iconUrl": "",
+          "action": "details",
+          "details": [
+            "Host: starwars.apps.radiusmethod.io",
+            "",
+            "ssh starwars.apps.radiusmethod.io"
           ]
         }
       ]
