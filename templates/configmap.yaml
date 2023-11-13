@@ -80,6 +80,21 @@ data:
             "",
             "Open Minecraft, Select Multiplayer, and add Server minecraft.apps.radiusmethod.io"
           ]
+        },
+            {
+          "hostname": "landmine.apps.radiusmethod.io",
+          "listenPort": 443,
+          "targetPort": 25565,
+          "targetHost": "landmine.landmine.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie",
+          "friendlyName": "Landmine",
+          "iconUrl": "",
+          "action": "details",
+          "details": [
+            "Host: landmine.apps.radiusmethod.io",
+            "",
+            "https://landmine.apps.radiusmethod.io"
+          ]
         }
       ]
     }
