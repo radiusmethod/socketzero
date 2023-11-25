@@ -97,6 +97,21 @@ data:
           ]
         },
         {
+          "hostname": "landmine.bigbang.dev",
+          "listenPort": 443,
+          "targetPort": 29999,
+          "targetHost": "public-ingressgateway.istio-system.svc.cluster.local",
+          "cookie": "__Host-socketzero-authservice-session-id-cookie",
+          "friendlyName": "Landmine",
+          "iconUrl": "",
+          "action": "details",
+          "details": [
+            "Host: landmine.bigbang.dev",
+            "",
+            "https://landmine.bigbang.dev"
+          ]
+        },
+        {
           "hostname": "starwars.apps.radiusmethod.io",
           "listenPort": 22,
           "targetPort": 22,
