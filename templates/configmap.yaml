@@ -20,7 +20,7 @@ data:
             "Host: redis.apps.radiusmethod.io:6379",
             "",
             "example: redis-cli -h redis.apps.radiusmethod.io"
-          ],          
+          ]          
         },
         {
           "hostname": "mariadb.apps.radiusmethod.io",
