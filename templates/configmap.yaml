@@ -94,11 +94,9 @@ data:
           "cookie": "__Host-socketzero-authservice-session-id-cookie",
           "friendlyName": "Landmine",
           "iconUrl": "",
-          "action": "details",
+          "action": "url",
           "roles": ["landmine"],
-          "details": [
-            "Host: landmine.apps.radiusmethod.io",
-            "",
+          "details": [          
             "https://landmine.apps.radiusmethod.io"
           ]
         },
@@ -110,11 +108,9 @@ data:
           "cookie": "__Host-socketzero-authservice-session-id-cookie",
           "friendlyName": "Landmine",
           "iconUrl": "",
-          "action": "details",
+          "action": "url",
           "roles": ["landmine"],
           "details": [
-            "Host: landmine.bigbang.dev",
-            "",
             "https://landmine.bigbang.dev"
           ]
         },
