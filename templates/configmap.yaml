@@ -89,20 +89,6 @@ data:
           ]
         },
         {
-          "hostname": "landmine.apps.radiusmethod.io",
-          "listenPort": 80,
-          "targetPort": 29999,
-          "targetHost": "landmine.landmine.svc.cluster.local",
-          "transport": "tcp",
-          "friendlyName": "Landmine",
-          "iconUrl": "",
-          "action": "url",
-          "roles": ["landmine"],
-          "details": [          
-            "https://landmine.apps.radiusmethod.io"
-          ]
-        },
-        {
           "hostname": "landmine.bigbang.dev",
           "listenPort": 443,
           "targetPort": 443,
