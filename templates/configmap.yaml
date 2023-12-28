@@ -117,6 +117,24 @@ data:
             "",
             "ssh starwars.apps.radiusmethod.io"
           ]
+        },
+        {
+          "hostname": "quad9.net",
+          "listenPort": 15353,
+          "targetPort": 53,
+          "transport": "udp",
+          "targetHost": "9.9.9.9",
+          "friendlyName": "Quad9",
+          "iconUrl": "",
+          "action": "details",
+          "roles": [
+            "quad9"
+          ],
+          "details": [
+            "Host: quad9.net:15353",
+            "",
+            "dig yahoo.com @quad9.net -p15353"
+          ]
         }
       ]
     }
