@@ -4,4 +4,4 @@ metadata:
   name: {{ .Release.Name }}-configmap
 data:
   config.json: |
-    {{ .Values.config | nindent 4 }}
+    {{ .Values.config | quote | nindent 4 }}
