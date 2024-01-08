@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
 data:
-  config.json: "{{ .Values.config }}"
+  config.json: |
+    {{ .Values.config | nindent 2 }}
