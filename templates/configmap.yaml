@@ -5,7 +5,7 @@ metadata:
 data:
   config.json: |
     {
-      "authz": true,
+      "authz": false,
       "cookie": "__Host-socketzero-authservice-session-id-cookie",
       "tunnels" : [
         {
