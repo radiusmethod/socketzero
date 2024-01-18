@@ -15,6 +15,10 @@ image:
 imagePullSecrets:
   - name: ecr
 
+license:
+  organization: ""
+  key: ""
+
 nameOverride: ""
 fullnameOverride: "socketzero"
 
