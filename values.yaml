@@ -7,7 +7,7 @@ domain: "bigbang.dev"
 replicaCount: 1
 
 image:
-  repository: 114589198289.dkr.ecr.us-gov-west-1.amazonaws.com/socketzero-receiver
+  repository: registry1.dso.mil/opensource/radiusmethod/socketzero/receiver
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
