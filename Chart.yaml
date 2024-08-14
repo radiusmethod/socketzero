@@ -21,4 +21,10 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "0.2.3"
+appVersion: "0.2.7"
+
+dependencies:
+  - name: redis
+    version: 19.6.2-bb.1
+    repository: oci://registry1.dso.mil/bigbang
+    condition: redis.install
